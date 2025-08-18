@@ -1,13 +1,13 @@
-name: Scanner Data Update
+name: BTC Auto Scanner
 
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: "0 */1 * * *"
-  workflow_dispatch:       # Allow manual run
-  
+    - cron: "0 */1 * * *"   # Run every 1 hour
+  workflow_dispatch:         # Allow manual trigger
+
 permissions:
   contents: write
   pull-requests: write
@@ -17,32 +17,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2      
+    - name: Checkout repository
+      uses: actions/checkout@v4
       with:
-        persist-credentials: false
         fetch-depth: 0
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '18'
 
     - name: Install dependencies
       run: npm install
 
     - name: Fetch BTCUSD Market Scanner Data
       run: |
-        node index.js || echo "Failed to fetch data"
+        node index.js || echo "⚠️ Failed to fetch scanner data"
 
-    - name: Run Bot Task
+    - name: Update README timestamp
       run: |
-        chmod +x ./index.sh
-        ./index.sh
+        d=$(date '+%Y-%m-%dT%H:%M:%SZ')
+        sed -i "s/Last Update:.*/Last Update: ${d}/" README.md
 
-    - name: Commit and push if there are changes
-      uses: ad-m/github-push-action@master
+    - name: Commit and push if changes
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        force: true
-        directory: "."
+        commit_message: "📈 Auto update BTC scanner data"
         branch: main
-        github_token: ${{ secrets.GITHUB_TOKEN }}
