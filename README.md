@@ -1,7 +1,7 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 18 August 2025 at 20:20:48
-## Price Now115672.30
+## Last updated: 18 August 2025 at 20:23:09
+## Price Now: $115,716.18
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -68,7 +68,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 38.30 | 22.55 | 16.37 | -39.07 | 44.78 | 32.68 | -1838.62 | 277.18 | -653.23 | -639.95 | -67.18 | 115380.52 |
+| 39.15 | 23.06 | 16.54 | -37.95 | 44.73 | 32.61 | -1837.46 | 321.06 | -649.73 | -639.25 | -65.66 | 115393.68 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,7 +76,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 115565.44 | 115362.15 | 116073.73 | 116223.64 | 116456.37 | 116910.61 | 116956.65 | 117247.78 | 117664.01 | 117724.52 | 117970.52 | 118915.10 |
+| 115573.42 | 115366.53 | 116077.91 | 116225.84 | 116459.20 | 116912.07 | 116958.37 | 117248.66 | 117664.88 | 117724.96 | 117970.96 | 118915.32 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
