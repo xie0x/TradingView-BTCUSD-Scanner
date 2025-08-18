@@ -13,6 +13,15 @@ const listPivotWoodie = ['Pivot.M.Woodie.S3', 'Pivot.M.Woodie.S2', 'Pivot.M.Wood
 const listPivotDemark = ['Pivot.M.Demark.S1', 'Pivot.M.Demark.Middle', 'Pivot.M.Demark.R1']
 const listIndicators = ['RSI', 'Stoch.K', 'Stoch.D', 'CCI20', 'ADX', 'ADX-DI', 'AO', 'Mom', 'MACD.macd', 'MACD.signal', 'W.R', 'HullMA9']
 const listEMASMA = ['EMA10', 'SMA10', 'EMA20', 'SMA20', 'EMA30', 'SMA30', 'EMA50', 'SMA50', 'EMA100', 'SMA100', 'EMA200', 'SMA200']
+const listPivotHighLow = [
+  "Pivot.M.HighLow.S3|60",
+  "Pivot.M.HighLow.S2|60",
+  "Pivot.M.HighLow.S1|60",
+  "Pivot.M.HighLow.Middle|60",
+  "Pivot.M.HighLow.R1|60",
+  "Pivot.M.HighLow.R2|60",
+  "Pivot.M.HighLow.R3|60",
+]
 
 /**
  * Formats the readme content based on the provided data.
@@ -32,7 +41,7 @@ const formattedDate = now.toLocaleString("en-GB", {
 
 const formatReadme = (data) => {
   const formattedReadme = []
-  formattedReadme.push('# TradingView BTCUSD Scanner')
+  formattedReadme.push('# TradingView BTCUSD Scanner (1H)')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('## Last updated: ' + formattedDate)
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
@@ -40,10 +49,16 @@ const formatReadme = (data) => {
   formattedReadme.push('BTCUSD recommendation scanner based on real-time TradingView data Scanner API')
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
-  formattedReadme.push('\n## Recomendation')
+  formattedReadme.push('\n## Recommendation')
   formattedReadme.push(`| ${listRecomendation.map((item) => `${item.split('.')[1]} |`).join(' ')}`)
   formattedReadme.push(`| ${listRecomendation.map((item) => `:---: |`).join(' ')}`)
   formattedReadme.push(`| ${listRecomendation.map((item) => `${data[item + '|240'] === 1 ? 'Buy' : data[item + '|240'] === 0 ? 'Neutral' : 'Sell'} |`).join(' ')}`)
+  formattedReadme.push('\n')
+  formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
+  formattedReadme.push('\n## Pivot Points High Low')
+  formattedReadme.push(`| ${listPivotHighLow.map((item) => `${item.split("|")[0]} |`).join(" ")}`)
+  formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
+  formattedReadme.push(`| ${listPivotHighLow.map((item) => `${data[item]?.toFixed(2) ?? "-"} |`).join(" ")}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Classic')
@@ -98,7 +113,9 @@ const formatReadme = (data) => {
 const main = async () => {
   try {
     const symbol = 'CRYPTO:BTCUSD'
-    const { data } = await axios.get(`https://scanner.tradingview.com/symbol?symbol=${symbol}&fields=240,RSI|240,RSI[1]|240,Stoch.K|240,Stoch.D|240,Stoch.K[1]|240,Stoch.D[1]|240,CCI20|240,CCI20[1]|240,ADX|240,ADX+DI|240,ADX-DI|240,ADX+DI[1]|240,ADX-DI[1]|240,AO|240,AO[1]|240,AO[2]|240,Mom|240,Mom[1]|240,MACD.macd|240,MACD.signal|240,Rec.Stoch.RSI|240,Stoch.RSI.K|240,Rec.WR|240,W.R|240,Rec.BBPower|240,BBPower|240,Rec.UO|240,UO|240,EMA10|240,close|240,SMA10|240,EMA20|240,SMA20|240,EMA30|240,SMA30|240,EMA50|240,SMA50|240,EMA100|240,SMA100|240,EMA200|240,SMA200|240,Rec.Ichimoku|240,Ichimoku.BLine|240,Rec.VWMA|240,VWMA|240,Rec.HullMA9|240,HullMA9|240,Pivot.M.Classic.S3|240,Pivot.M.Classic.S2|240,Pivot.M.Classic.S1|240,Pivot.M.Classic.Middle|240,Pivot.M.Classic.R1|240,Pivot.M.Classic.R2|240,Pivot.M.Classic.R3|240,Pivot.M.Fibonacci.S3|240,Pivot.M.Fibonacci.S2|240,Pivot.M.Fibonacci.S1|240,Pivot.M.Fibonacci.Middle|240,Pivot.M.Fibonacci.R1|240,Pivot.M.Fibonacci.R2|240,Pivot.M.Fibonacci.R3|240,Pivot.M.Camarilla.S3|240,Pivot.M.Camarilla.S2|240,Pivot.M.Camarilla.S1|240,Pivot.M.Camarilla.Middle|240,Pivot.M.Camarilla.R1|240,Pivot.M.Camarilla.R2|240,Pivot.M.Camarilla.R3|240,Pivot.M.Woodie.S3|240,Pivot.M.Woodie.S2|240,Pivot.M.Woodie.S1|240,Pivot.M.Woodie.Middle|240,Pivot.M.Woodie.R1|240,Pivot.M.Woodie.R2|240,Pivot.M.Woodie.R3|240,Pivot.M.Demark.S1|240,Pivot.M.Demark.Middle|240,Pivot.M.Demark.R1|240&no_404=true`)
+    const { data } = await axios.get(
+      `https://scanner.tradingview.com/symbol?symbol=${symbol}&fields=240,RSI|240,RSI[1]|240,Stoch.K|240,Stoch.D|240,Stoch.K[1]|240,Stoch.D[1]|240,CCI20|240,CCI20[1]|240,ADX|240,ADX+DI|240,ADX-DI|240,ADX+DI[1]|240,ADX-DI[1]|240,AO|240,AO[1]|240,AO[2]|240,Mom|240,Mom[1]|240,MACD.macd|240,MACD.signal|240,Rec.Stoch.RSI|240,Stoch.RSI.K|240,Rec.WR|240,W.R|240,Rec.BBPower|240,BBPower|240,Rec.UO|240,UO|240,EMA10|240,close|240,SMA10|240,EMA20|240,SMA20|240,EMA30|240,SMA30|240,EMA50|240,SMA50|240,EMA100|240,SMA100|240,EMA200|240,SMA200|240,Rec.Ichimoku|240,Ichimoku.BLine|240,Rec.VWMA|240,VWMA|240,Rec.HullMA9|240,HullMA9|240,Pivot.M.Classic.S3|240,Pivot.M.Classic.S2|240,Pivot.M.Classic.S1|240,Pivot.M.Classic.Middle|240,Pivot.M.Classic.R1|240,Pivot.M.Classic.R2|240,Pivot.M.Classic.R3|240,Pivot.M.Fibonacci.S3|240,Pivot.M.Fibonacci.S2|240,Pivot.M.Fibonacci.S1|240,Pivot.M.Fibonacci.Middle|240,Pivot.M.Fibonacci.R1|240,Pivot.M.Fibonacci.R2|240,Pivot.M.Fibonacci.R3|240,Pivot.M.Camarilla.S3|240,Pivot.M.Camarilla.S2|240,Pivot.M.Camarilla.S1|240,Pivot.M.Camarilla.Middle|240,Pivot.M.Camarilla.R1|240,Pivot.M.Camarilla.R2|240,Pivot.M.Camarilla.R3|240,Pivot.M.Woodie.S3|240,Pivot.M.Woodie.S2|240,Pivot.M.Woodie.S1|240,Pivot.M.Woodie.Middle|240,Pivot.M.Woodie.R1|240,Pivot.M.Woodie.R2|240,Pivot.M.Woodie.R3|240,Pivot.M.Demark.S1|240,Pivot.M.Demark.Middle|240,Pivot.M.Demark.R1|240,Pivot.M.HighLow.S3|240,Pivot.M.HighLow.S2|240,Pivot.M.HighLow.S1|240,Pivot.M.HighLow.Middle|240,Pivot.M.HighLow.R1|240,Pivot.M.HighLow.R2|240,Pivot.M.HighLow.R3&no_404=true`
+    )
     const formattedReadme = formatReadme(data)
     await fs.writeFileSync('README.md', formattedReadme.join('\n'))
   } catch (err) {
