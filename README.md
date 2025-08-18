@@ -1,6 +1,6 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 18 August 2025 at 19:26:02
+## Last updated: 18 August 2025 at 19:32:13
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -17,7 +17,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Pivot Points High Low
-| Pivot.M.HighLow.S3 | Pivot.M.HighLow.S2 | Pivot.M.HighLow.S1 | Pivot.M.HighLow.Middle | Pivot.M.HighLow.R1 | Pivot.M.HighLow.R2 | Pivot.M.HighLow.R3 |
+| S3 | S2 | S1 | Middle | R1 | R2 | R3 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | - | - | - | - | - | - | - |
 
@@ -67,7 +67,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 24.53 | 10.48 | 10.62 | -73.37 | 46.59 | 35.64 | -1986.15 | -464.92 | -747.53 | -644.92 | -89.81 | 114978.08 |
+| 27.11 | 11.47 | 10.95 | -71.63 | 46.59 | 35.64 | -1986.15 | -366.69 | -739.69 | -643.35 | -86.85 | 115007.55 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -75,7 +75,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 115447.23 | 115282.47 | 116066.51 | 116312.75 | 116476.92 | 116973.41 | 116988.69 | 117272.99 | 117693.96 | 117779.62 | 117988.45 | 118924.49 |
+| 115465.09 | 115292.30 | 116075.86 | 116317.66 | 116483.26 | 116976.68 | 116992.55 | 117274.95 | 117695.90 | 117780.60 | 117989.43 | 118924.98 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
