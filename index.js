@@ -14,13 +14,13 @@ const listPivotDemark = ['Pivot.M.Demark.S1', 'Pivot.M.Demark.Middle', 'Pivot.M.
 const listIndicators = ['RSI', 'Stoch.K', 'Stoch.D', 'CCI20', 'ADX', 'ADX-DI', 'AO', 'Mom', 'MACD.macd', 'MACD.signal', 'W.R', 'HullMA9']
 const listEMASMA = ['EMA10', 'SMA10', 'EMA20', 'SMA20', 'EMA30', 'SMA30', 'EMA50', 'SMA50', 'EMA100', 'SMA100', 'EMA200', 'SMA200']
 const listPivotHighLow = [
-  "Pivot.M.HighLow.S3|60",
-  "Pivot.M.HighLow.S2|60",
-  "Pivot.M.HighLow.S1|60",
-  "Pivot.M.HighLow.Middle|60",
-  "Pivot.M.HighLow.R1|60",
-  "Pivot.M.HighLow.R2|60",
-  "Pivot.M.HighLow.R3|60",
+  "Pivot.M.HighLow.S3",
+  "Pivot.M.HighLow.S2",
+  "Pivot.M.HighLow.S1",
+  "Pivot.M.HighLow.Middle",
+  "Pivot.M.HighLow.R1",
+  "Pivot.M.HighLow.R2",
+  "Pivot.M.HighLow.R3",
 ]
 
 /**
@@ -67,7 +67,7 @@ const formatReadme = (data) => {
   formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
   formattedReadme.push(
     `| ${listPivotHighLow.map((item) => {
-      const val = data[`${item}|60`]
+      const val = usdFormatter.data[`${item}|60`]
       return val !== null && val !== undefined ? val.toFixed(2) + " |" : "- |"
     }).join(" ")}`
   )
@@ -76,43 +76,43 @@ const formatReadme = (data) => {
   formattedReadme.push('\n## Pivot Points Classic')
   formattedReadme.push(`| ${listPivotClassic.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotClassic.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotClassic.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotClassic.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Fibonacci')
   formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotFibonacci.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Camarilla')
   formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotCamarilla.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Woodie')
   formattedReadme.push(`| ${listPivotWoodie.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotWoodie.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotWoodie.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotWoodie.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Demark')
   formattedReadme.push(`| ${listPivotDemark.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotDemark.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotDemark.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotDemark.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Technical Indicators')
   formattedReadme.push(`| ${listIndicators.map((item) => `${item.split('|')[0].replace(/.macd|.signal/, '')} |`).join(' ')}`)
   formattedReadme.push(`| ${listIndicators.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listIndicators.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listIndicators.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## EMA & SMA')
   formattedReadme.push(`| ${listEMASMA.map((item) => `${item.split('|')[0]} |`).join(' ')}`)
   formattedReadme.push(`| ${listEMASMA.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listEMASMA.map((item) => `${data[item + '|60'].toFixed(2)} |`).join(' ')}`)
+  formattedReadme.push(`| ${listEMASMA.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   return formattedReadme
