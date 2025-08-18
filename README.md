@@ -1,5 +1,7 @@
-# TradingView Scanner
-This data is retrieved from TradingView Scanner API, Last updated at 2025-08-18T11:15:55.450Z
+# TradingView BTCUSD Scanner
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+BTCUSD recommendation scanner based on real-time trading view data
+This data is retrieved from TradingView Scanner API, Last updated at 18 August 2025 at 18:20:35
 
 ## Recomendation
 | Stoch | WR | BBPower | UO | Ichimoku | RSI | HullMA9 |
@@ -34,9 +36,9 @@ This data is retrieved from TradingView Scanner API, Last updated at 2025-08-18T
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 30.01 | 9.72 | 17.44 | -246.23 | 27.34 | 37.70 | -2270.08 | -2582.14 | -804.74 | -542.95 | -88.58 | 114947.94 |
+| 29.83 | 9.36 | 17.32 | -247.24 | 27.34 | 37.70 | -2270.08 | -2623.92 | -808.08 | -543.62 | -89.65 | 114935.40 |
 
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 116698.50 | 117095.65 | 117430.98 | 117449.91 | 117804.02 | 118524.23 | 117972.11 | 118928.17 | 117663.95 | 116982.56 | 116565.14 | 117514.49 |
+| 116690.90 | 117091.47 | 117427.00 | 117447.83 | 117801.32 | 118522.84 | 117970.47 | 118927.33 | 117663.12 | 116982.14 | 116564.72 | 117514.28 |
