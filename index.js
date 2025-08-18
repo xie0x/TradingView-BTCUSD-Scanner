@@ -14,13 +14,13 @@ const listPivotDemark = ['Pivot.M.Demark.S1', 'Pivot.M.Demark.Middle', 'Pivot.M.
 const listIndicators = ['RSI', 'Stoch.K', 'Stoch.D', 'CCI20', 'ADX', 'ADX-DI', 'AO', 'Mom', 'MACD.macd', 'MACD.signal', 'W.R', 'HullMA9']
 const listEMASMA = ['EMA10', 'SMA10', 'EMA20', 'SMA20', 'EMA30', 'SMA30', 'EMA50', 'SMA50', 'EMA100', 'SMA100', 'EMA200', 'SMA200']
 const listPivotHighLow = [
-  "Pivot.M.HighLow.S3|60",
-  "Pivot.M.HighLow.S2|60",
-  "Pivot.M.HighLow.S1|60",
-  "Pivot.M.HighLow.Middle|60",
-  "Pivot.M.HighLow.R1|60",
-  "Pivot.M.HighLow.R2|60",
-  "Pivot.M.HighLow.R3|60",
+  "Pivot.M.HighLow.S3",
+  "Pivot.M.HighLow.S2",
+  "Pivot.M.HighLow.S1",
+  "Pivot.M.HighLow.Middle",
+  "Pivot.M.HighLow.R1",
+  "Pivot.M.HighLow.R2",
+  "Pivot.M.HighLow.R3",
 ]
 
 /**
@@ -56,9 +56,14 @@ const formatReadme = (data) => {
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points High Low')
-  formattedReadme.push(`| ${listPivotHighLow.map((item) => `${item.split("|")[0]} |`).join(" ")}`)
+  formattedReadme.push(`| ${listPivotHighLow.map((item) => `${item.replace("Pivot.M.HighLow.", "")} |`).join(" ")}`)
   formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
-  formattedReadme.push(`| ${listPivotHighLow.map((item) => `${data[item]?.toFixed(2) ?? "-"} |`).join(" ")}`)
+  formattedReadme.push(
+    `| ${listPivotHighLow.map((item) => {
+      const val = data[`60,${item}`]
+      return val !== undefined ? val.toFixed(2) + " |" : "- |"
+    }).join(" ")}`
+  )
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Classic')
