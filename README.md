@@ -1,7 +1,7 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 18 August 2025 at 21:08:44
-## Price Now: $115,133.04
+## Last updated: 18 August 2025 at 21:09:28
+## Price Now: $115,040.23
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -68,7 +68,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 34.18 | 15.67 | 15.02 | -66.34 | 43.63 | 28.05 | -1776.71 | -409.85 | -694.69 | -660.70 | -85.10 | 115151.13 |
+| 32.49 | 14.54 | 14.65 | -68.20 | 43.63 | 28.05 | -1776.71 | -502.66 | -702.09 | -662.18 | -88.47 | 115123.29 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,7 +76,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 115372.59 | 115244.37 | 115917.98 | 116061.03 | 116324.65 | 116774.76 | 116856.20 | 117178.66 | 117598.99 | 117658.37 | 117934.72 | 118896.41 |
+| 115355.72 | 115235.09 | 115909.14 | 116056.39 | 116318.66 | 116771.67 | 116852.56 | 117176.81 | 117597.15 | 117657.44 | 117933.80 | 118895.94 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
