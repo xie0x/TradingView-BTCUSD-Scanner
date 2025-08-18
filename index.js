@@ -149,7 +149,7 @@ const main = async () => {
 
     history.push({
       time: formattedDate,
-      price: data['60,close'] || null, // extract price from API response
+      price: usdFormatter.format(data['close|60']) || null, // extract price from API response
     })
 
     await fs.writeJson(historyFile, history, { spaces: 2 })
