@@ -45,6 +45,12 @@ const usdFormatter = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 2,
 })
 
+const formatUSD = (val) => {
+  return val !== null && val !== undefined
+    ? usdFormatter.format(val)
+    : "-";
+};
+
 const formatReadme = (data) => {
   const formattedReadme = []
   formattedReadme.push('# TradingView BTCUSD Scanner (1H)')
@@ -65,54 +71,50 @@ const formatReadme = (data) => {
   formattedReadme.push('\n## Pivot Points High Low')
   formattedReadme.push(`| ${listPivotHighLow.map((item) => `${item.replace("Pivot.M.HighLow.", "")} |`).join(" ")}`)
   formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
-  formattedReadme.push(
-    `| ${listPivotHighLow.map((item) => {
-      const val = usdFormatter.data[`${item}|60`]
-      return val !== null && val !== undefined ? val.toFixed(2) + " |" : "- |"
-    }).join(" ")}`
+  formattedReadme.push(| ${listPivotHighLow.map((item) => { const val = data[60,${item}] return val !== undefined ? val.toFixed(2) + " |" : "- |" }).join(" ")}
   )
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Classic')
   formattedReadme.push(`| ${listPivotClassic.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotClassic.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotClassic.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotClassic.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Fibonacci')
   formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotFibonacci.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotFibonacci.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Camarilla')
   formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotCamarilla.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotCamarilla.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Woodie')
   formattedReadme.push(`| ${listPivotWoodie.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotWoodie.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotWoodie.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotWoodie.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Pivot Points Demark')
   formattedReadme.push(`| ${listPivotDemark.map((item) => `${item.split('.')[3]} |`).join(' ')}`)
   formattedReadme.push(`| ${listPivotDemark.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listPivotDemark.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listPivotDemark.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## Technical Indicators')
   formattedReadme.push(`| ${listIndicators.map((item) => `${item.split('|')[0].replace(/.macd|.signal/, '')} |`).join(' ')}`)
   formattedReadme.push(`| ${listIndicators.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listIndicators.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listIndicators.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   formattedReadme.push('\n## EMA & SMA')
   formattedReadme.push(`| ${listEMASMA.map((item) => `${item.split('|')[0]} |`).join(' ')}`)
   formattedReadme.push(`| ${listEMASMA.map((item) => `:---: |`).join(' ')}`)
-  formattedReadme.push(`| ${listEMASMA.map((item) => `${usdFormatter.format(data[item + '|60'])} |`).join(' ')}`)
+  formattedReadme.push(`| ${listEMASMA.map((item) => `${formatUSD(data[item + '|60'])} |`).join(' ')}`)
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
   return formattedReadme
