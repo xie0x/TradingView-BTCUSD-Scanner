@@ -19,10 +19,23 @@ const listEMASMA = ['EMA10', 'SMA10', 'EMA20', 'SMA20', 'EMA30', 'SMA30', 'EMA50
  * @param {object} data - The data used to format the readme.
  * @returns {string[]} - The formatted readme content as an array of strings.
  */
+const now = new Date();
+const formattedDate = now.toLocaleString("en-GB", {
+  timeZone: "Asia/Jakarta",
+  year: "numeric",
+  month: "long",   // "August"
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit"
+});
+
 const formatReadme = (data) => {
   const formattedReadme = []
-  formattedReadme.push('# TradingView Scanner')
-  formattedReadme.push('This data is retrieved from TradingView Scanner API, Last updated at ' + new Date().toISOString())
+  formattedReadme.push('# TradingView BTCUSD Scanner')
+  formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
+  formattedReadme.push('BTCUSD recommendation scanner based on real-time trading view data')
+  formattedReadme.push('This data is retrieved from TradingView Scanner API, Last updated at ' + formattedDate)
   formattedReadme.push('\n## Recomendation')
   formattedReadme.push(`| ${listRecomendation.map((item) => `${item.split('.')[1]} |`).join(' ')}`)
   formattedReadme.push(`| ${listRecomendation.map((item) => `:---: |`).join(' ')}`)
