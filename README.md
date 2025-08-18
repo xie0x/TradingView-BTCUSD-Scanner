@@ -1,6 +1,6 @@
-# TradingView BTCUSD Scanner
+# TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 18 August 2025 at 18:29:00
+## Last updated: 18 August 2025 at 19:24:10
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -8,10 +8,18 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## Recomendation
+## Recommendation
 | Stoch | WR | BBPower | UO | Ichimoku | RSI | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Neutral | Neutral | Neutral | Neutral | Neutral | Sell | Buy |
+| Neutral | Buy | Neutral | Sell | Neutral | Sell | Buy |
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## Pivot Points High Low
+| Pivot.M.HighLow.S3 | Pivot.M.HighLow.S2 | Pivot.M.HighLow.S1 | Pivot.M.HighLow.Middle | Pivot.M.HighLow.R1 | Pivot.M.HighLow.R2 | Pivot.M.HighLow.R3 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| - | - | - | - | - | - | - |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -59,7 +67,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 29.45 | 8.60 | 17.07 | -249.39 | 27.34 | 37.70 | -2270.08 | -2713.32 | -815.21 | -545.05 | -91.94 | 114908.58 |
+| 30.05 | 8.57 | 11.42 | -189.55 | 28.94 | 36.87 | -2684.46 | -2376.11 | -897.53 | -615.72 | -90.71 | 114408.28 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -67,7 +75,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 116674.64 | 117082.53 | 117418.49 | 117443.36 | 117795.55 | 118519.86 | 117966.97 | 118925.54 | 117661.35 | 116981.25 | 116563.83 | 117513.83 |
+| 116383.76 | 116843.55 | 117195.17 | 117245.18 | 117619.92 | 118325.53 | 117853.47 | 118870.40 | 117610.09 | 116999.10 | 116548.99 | 117498.27 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
