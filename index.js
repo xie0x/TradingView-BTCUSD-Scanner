@@ -137,10 +137,8 @@ const main = async () => {
 
     const formattedDate = new Date().toISOString()
 
-    // save latest snapshot (overwrite)
     await fs.writeJson('databtc.json', { updated: formattedDate, data }, { spaces: 2 })
 
-    // append to price history
     const historyFile = 'btcprice_history.json'
     let history = []
     if (await fs.pathExists(historyFile)) {
@@ -149,12 +147,11 @@ const main = async () => {
 
     history.push({
       time: formattedDate,
-      price: usdFormatter.format(data['close|60']) || null, // extract price from API response
+      price: usdFormatter.format(data['close|60']) || null,
     })
 
     await fs.writeJson(historyFile, history, { spaces: 2 })
 
-    // update README
     const formattedReadme = formatReadme(data)
     await fs.writeFileSync('README.md', formattedReadme.join('\n'))
     
