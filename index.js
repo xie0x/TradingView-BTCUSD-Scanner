@@ -60,7 +60,7 @@ const formatReadme = (data) => {
   formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
   formattedReadme.push(
     `| ${listPivotHighLow.map((item) => {
-      const val = data[item + '|60']
+      const val = data[`60,${item}`]
       return val !== undefined ? val.toFixed(2) + " |" : "- |"
     }).join(" ")}`
   )
