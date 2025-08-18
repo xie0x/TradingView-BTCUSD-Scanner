@@ -71,7 +71,11 @@ const formatReadme = (data) => {
   formattedReadme.push('\n## Pivot Points High Low')
   formattedReadme.push(`| ${listPivotHighLow.map((item) => `${item.replace("Pivot.M.HighLow.", "")} |`).join(" ")}`)
   formattedReadme.push(`| ${listPivotHighLow.map(() => `:---: |`).join(" ")}`)
-  formattedReadme.push(| ${listPivotHighLow.map((item) => { const val = data[60,${item}] return val !== undefined ? val.toFixed(2) + " |" : "- |" }).join(" ")}
+  formattedReadme.push(
+    `| ${listPivotHighLow.map((item) => {
+      const val = data[`${item}|60`]
+      return val !== null && val !== undefined ? val.toFixed(2) + " |" : "- |"
+    }).join(" ")}`
   )
   formattedReadme.push('\n')
   formattedReadme.push('![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)')
