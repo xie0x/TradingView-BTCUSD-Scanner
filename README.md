@@ -1,7 +1,7 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 1 September 2025 at 06:28:36 (GMT+7)
-## Price Now: $108,418.76
+## Last updated: 1 September 2025 at 10:42:50 (GMT+7)
+## Price Now: $107,516.19
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -12,7 +12,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Recommendation
 | Stoch | WR | BBPower | UO | Ichimoku | RSI | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Neutral | Neutral | Sell | Neutral | Neutral | Sell | Sell |
+| Neutral | Neutral | Neutral | Neutral | Neutral | Sell | Sell |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -28,7 +28,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Pivot Points Classic
 | S3 | S2 | S1 | Middle | R1 | R2 | R3 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $100,298.15 | $107,125.48 | $110,289.45 | $113,952.81 | $117,116.78 | $120,780.14 | $127,607.47 |
+| $97,223.26 | $103,492.51 | $105,876.13 | $109,761.76 | $112,145.38 | $116,031.01 | $122,300.26 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -36,7 +36,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Pivot Points Fibonacci
 | S3 | S2 | S1 | Middle | R1 | R2 | R3 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $107,125.48 | $109,733.52 | $111,344.77 | $113,952.81 | $116,560.85 | $118,172.10 | $120,780.14 |
+| $103,492.51 | $105,887.36 | $107,366.90 | $109,761.76 | $112,156.61 | $113,636.15 | $116,031.01 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -44,7 +44,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Pivot Points Camarilla
 | S3 | S2 | S1 | Middle | R1 | R2 | R3 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $111,575.91 | $112,201.75 | $112,827.59 | $113,952.81 | $114,079.27 | $114,705.11 | $115,330.95 |
+| $106,535.72 | $107,110.40 | $107,685.08 | $109,761.76 | $108,834.44 | $109,409.12 | $109,983.80 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -52,7 +52,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Pivot Points Woodie
 | S3 | S2 | S1 | Middle | R1 | R2 | R3 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $103,211.47 | $107,000.15 | $110,038.81 | $113,827.48 | $116,866.14 | $120,654.81 | $123,693.47 |
+| $98,855.89 | $103,117.01 | $105,125.14 | $109,386.26 | $111,394.39 | $115,655.51 | $117,663.64 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -60,7 +60,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Pivot Points Demark
 | S1 | Middle | R1 |
 | :---: | :---: | :---: |
-| $108,707.47 | $113,161.81 | $115,534.80 |
+| $104,684.32 | $109,165.85 | $110,953.57 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -68,7 +68,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $41.63 | $56.42 | $72.05 | -$57.86 | $13.97 | $24.40 | $158.18 | -$8.12 | $6.04 | $5.15 | -$79.46 | $108,836.14 |
+| $29.31 | $16.30 | $23.50 | -$188.23 | $21.94 | $33.99 | -$664.26 | -$1,487.55 | -$229.27 | -$88.27 | -$93.81 | $107,530.64 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,7 +76,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $108,826.32 | $108,882.83 | $108,813.49 | $108,756.84 | $108,832.01 | $108,821.58 | $109,006.66 | $108,672.24 | $109,674.72 | $109,974.62 | $110,923.87 | $111,116.88 |
+| $108,255.55 | $108,496.55 | $108,485.03 | $108,573.33 | $108,596.50 | $108,705.94 | $108,833.06 | $108,649.30 | $109,533.46 | $109,821.87 | $110,802.95 | $110,972.64 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
