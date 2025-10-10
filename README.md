@@ -1,7 +1,7 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 10 October 2025 at 12:17:20 (GMT+7)
-## Price Now: $121,209.59
+## Last updated: 10 October 2025 at 13:26:37 (GMT+7)
+## Price Now: $121,676.36
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -68,7 +68,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $45.18 | $61.97 | $52.52 | -$41.99 | $22.32 | $25.75 | -$540.93 | $229.04 | -$248.22 | -$273.95 | -$33.20 | $121,082.26 |
+| $49.89 | $82.00 | $67.41 | $22.46 | $21.15 | $23.72 | -$468.87 | $523.60 | -$179.45 | -$249.35 | -$12.19 | $121,414.11 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,7 +76,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $121,360.90 | $121,437.54 | $121,528.85 | $121,528.83 | $121,707.38 | $121,708.06 | $122,004.59 | $122,125.36 | $122,214.37 | $122,931.43 | $121,187.97 | $122,227.05 |
+| $121,484.66 | $121,534.54 | $121,581.36 | $121,524.60 | $121,732.32 | $121,682.37 | $122,008.53 | $122,128.50 | $122,212.38 | $122,911.04 | $121,197.23 | $122,248.86 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
