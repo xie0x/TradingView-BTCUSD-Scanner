@@ -1,7 +1,7 @@
 # TradingView BTCUSD Scanner (1H)
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## Last updated: 22 October 2025 at 22:18:25 (GMT+7)
-## Price Now: $108,244.59
+## Last updated: 22 October 2025 at 23:23:32 (GMT+7)
+## Price Now: $108,246.37
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2 id="about-the-project"> :pencil: About Project</h2>
 BTCUSD recommendation scanner based on real-time TradingView data Scanner API
@@ -12,7 +12,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Recommendation
 | Stoch | WR | BBPower | UO | Ichimoku | RSI | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Neutral | Neutral | Neutral | Neutral | Neutral | Sell | Sell |
+| Neutral | Neutral | Sell | Neutral | Neutral | Sell | Sell |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -68,7 +68,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## Technical Indicators
 | RSI | Stoch.K | Stoch.D | CCI20 | ADX | ADX-DI | AO | Mom | MACD | MACD | W.R | HullMA9 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $44.78 | $81.94 | $70.36 | -$7.85 | $21.70 | $24.01 | -$947.18 | $28.90 | -$376.55 | -$428.00 | -$41.01 | $108,779.11 |
+| $44.68 | $74.37 | $79.00 | -$13.69 | $21.20 | $22.40 | -$822.40 | $206.63 | -$351.20 | -$409.94 | -$40.94 | $108,803.69 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,7 +76,7 @@ BTCUSD recommendation scanner based on real-time TradingView data Scanner API
 ## EMA & SMA
 | EMA10 | SMA10 | EMA20 | SMA20 | EMA30 | SMA30 | EMA50 | SMA50 | EMA100 | SMA100 | EMA200 | SMA200 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $108,398.31 | $108,214.78 | $108,669.00 | $108,560.02 | $108,896.09 | $109,329.25 | $109,083.39 | $109,489.07 | $109,186.04 | $108,940.86 | $110,089.01 | $109,312.96 |
+| $108,402.11 | $108,256.57 | $108,646.95 | $108,440.66 | $108,866.93 | $109,326.38 | $109,058.52 | $109,433.27 | $109,171.53 | $108,954.34 | $110,072.75 | $109,295.76 |
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
